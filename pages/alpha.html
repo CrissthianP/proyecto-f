@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  </head>
+  <style>
+    img {
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .datos {
+      gap: 1rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: #e9ecef;
+    }
+    /* Estilo del modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Estilo de la imagen en el modal */
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    /* Estilo del botón de cierre */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <h1 class="text-center fs-1 my-4">Alpha</h1>
+    <div class="container text-center my-5">
+      <div class="row row-cols-2 datos"></div>
+    </div>
+    <div id="imagenModal" class="modal"></div>
+  </body>
+  <script>
+    const fetchReservas = [];
+    fetch("http://localhost/MAMP/reservas.php")
+      .then((res) => res.json())
+      .then((data) => {
+        fetchReservas.push(data);
+        data.forEach((reserva) => {
+          document.querySelector(".datos").innerHTML += `
+      <div class="card" style="width: 18rem;">
+        <img src=${reserva.imagen_url} class="card-img-top" alt="..." onclick="abrirModal('${reserva.ID_habitacion}')">
+    </div>
+             `;
+        });
+      });
+
+    // Obtener el modal
+    function abrirModal(id) {
+      let reserva = fetchReservas[0].find((reserva) => reserva.ID_habitacion == id);
+      console.log(reserva, "reserva", id);
+      let modal = document.getElementById("imagenModal");
+      modal.style.display = "block";
+      modal.innerHTML = `
+      <span class="close">&times;</span>
+<img class="modal-content" src="${reserva.imagen_url}" id="imagenModalSrc" />
+<div class="card-body text-center text-white mt-5">
+  <h5 class="card-title">Tipo de habitacion: ${reserva.tipo_habitacion}</h5>
+  <span class="my-2">Cod: ${reserva.ID_habitacion}</span>
+  <p class="card-text my-2">Descripcion: ${reserva.descripcion}</p>
+  <a href="#" class="btn btn-dark">Precio: $${reserva.precio}</a>
+</div>
+      `;
+
+      let span = document.getElementsByClassName("close")[0];
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    }
+    // abrirModal();
+  </script>
+
+  <div>
+  </div>
+  <div class="container">
+    <h1 class="my-4">Reserva de Hotel</h1>
+    <form 
+    action="http://localhost/MAMP/reservaform.php"
+    method="POST"
+    >
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" name="tel" placeholder="Ingrese su número de teléfono">
+      </div>
+      <div class="form-group">
+        <label for="fecha_llegada">Fecha de Llegada</label>
+        <input type="date" class="form-control" id="fecha_llegada">
+      </div>
+      <div class="form-group">
+        <label for="fecha_salida">Fecha de Salida</label>
+        <input type="date" class="form-control" id="fecha_salida">
+      </div>
+      <div class="form-group">
+        <label for="habitaciones">Número de Habitaciones</label>
+        <input type="number" class="form-control" id="habitaciones" min="1" max="10" value="1">
+      </div>
+      <div class="form-group">
+        <label for="personas">Número de Personas</label>
+        <input type="number" class="form-control" id="personas" min="1" max="10" value="1">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Reserva</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
+
+<!-- <span class="close">&times;</span>
+<img class="modal-content" src="${reserva.imagen_url}" id="imagenModalSrc" />
+<div class="card-body text-center text-white mt-5">
+  <h5 class="card-title">Tipo de habitacion: ${reserva.tipo_habitacion}</h5>
+  <span>Codigo de habitacion: ${reserva.ID_habitacion}</span>
+  <p class="card-text my-2">Descripcion: ${reserva.descripcion}</p>
+  <a href="#" class="btn btn-dark">Precio: $${reserva.precio}</a>
+</div> -->

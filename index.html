@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="carrousel.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://www.hilton.com/modules/assets/svgs/logos/HI.svg"
+      type="image/svg+xml"
+      sizes="16x16"
+    />
+    <title>Habitaciones y suites del hotel Hilton Lima Miraflores</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ms-2 d-block d-lg-none" href="#"
+          ><img src="https://www.hilton.com/modules/assets/svgs/logos/HI.svg" alt="" height="60px"
+        /></a>
+        <div class="collapse navbar-collapse mx-2 my-1" id="navbarTogglerDemo01">
+          <a class="navbar-brand ms-2 d-none d-lg-block" href="#"
+            ><img src="https://www.hilton.com/modules/assets/svgs/logos/HI.svg" alt="" height="60px"
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <form class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold" style="font-size: 14px">
+              <li class="nav-item mx-2">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./pages/reservas.html" id="reservas">Reservas</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./pages/alpha.html">Alpha</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Galería</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Ubicación</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Restaurantes</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section class="header-text d-flex align-items-center justify-content-center flex-column">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <h1 class="text-center fw-bold mb-4">
+              Hilton Lima <br />
+              Miraflores
+            </h1>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center px-4">
+              <p class="text-center mb-5 text-black-50 text-wrap" style="font-size: 18px">
+                Disfrute de la tradicional comida peruana en nuestro restaurante. Le ofrecemos wifi de cortesía, una
+                piscina de borde infinito en la última planta, un gimnasio y un lounge ejecutivo con vista a la ciudad
+                de Lima.
+              </p>
+              <button type="button" class="btn btn-lg btn-primary fw-bold fs-6 rounded-1 px-4 py-2 lh-lg">
+                Consultar tarifas
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section>
+      <nav class="bg-dark sticky-top">
+        <div class="container">
+          <div>
+            <ul class="nav justify-content-center" style="font-size: 14px">
+              <li class="nav-item my-1 my-lg-4">
+                <a class="nav-link text-white active fw-semibold" aria-current="page" href="#">Todo</a>
+              </li>
+              <li class="nav-item my-1 my-lg-4">
+                <a class="nav-link text-white fw-semibold" href="#">Habitaciones</a>
+              </li>
+              <li class="nav-item my-1 my-lg-4">
+                <a class="nav-link text-white fw-semibold" href="#">Suites</a>
+              </li>
+              <li class="nav-item my-1 my-lg-4">
+                <a class="nav-link text-white fw-semibold" href="#">Ejecutivas</a>
+              </li>
+              <li class="nav-item my-1 my-lg-4">
+                <a class="nav-link text-white fw-semibold" href="#">Accesible para personas con discapacidades</a>
+              </li>
+              <li class="nav-item my-1 my-lg-4">
+                <a class="nav-link text-white fw-semibold" href="#">Pet friendly</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-black">
+        <div class="container-fluid">
+          <div class="row text-center p-5">
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4777455/limmfhh-standard-king-room.jpg?impolicy=crop&cw=2784&ch=1666&gravity=NorthWest&xposition=0&yposition=90&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación-una cama King</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4783919/standard-queen-guestroom.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">2 camas Queen</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4767043/limmfhh-accessible-king.jpg?impolicy=crop&cw=2784&ch=1666&gravity=NorthWest&xposition=0&yposition=90&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación con una cama King</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4768741/deluxe-king-guestroom.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación de lujo con una cama King</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4776251/deluxe-queen-guestroom.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación de lujo con 2 camas Queen</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4776409/executive-king-guestroom-balcony.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación en planta ejecutiva-una cama King</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4781639/executive-queen-guestroom.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">2 camas Queen-planta ejecutiva</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4776402/executive-king-workdesk-balcony.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4text-center my-4 badge text-wrap lh-sm">
+                Suite ejecutiva con una cama King-balcón
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4783124/junior-suite-guestroom.jpg?impolicy=crop&cw=2258&ch=1351&gravity=NorthWest&xposition=0&yposition=74&rw=528&rh=316"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Suite Junior-una cama King</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4766381/social-bar.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Bar social</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4776251/deluxe-queen-guestroom.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">
+                Suite de un dormitorio-una cama King-planta ejecutiva
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4776251/deluxe-queen-guestroom.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación de lujo con cama Queen</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4772731/social-terrace.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Terraza social</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4779255/limmfhh-executive-king.jpg?impolicy=crop&cw=2495&ch=1848&gravity=NorthWest&xposition=144&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación ejecutiva con una cama King</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4769649/limmfhh.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Piscina y piscinas de hidromasaje</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4784908/social-restaurant-and-bar.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Restaurante y bar Social</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/9237622/hilton-miraflores-peru-presidential-suite-living-room.jpg?impolicy=crop&cw=4500&ch=3333&gravity=NorthWest&xposition=249&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">
+                Sala de estar de la suite Presidential con sillas, sillón, mesa y vista al exterior
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4778848/rooftop-bar-2.jpg?impolicy=crop&cw=3456&ch=2560&gravity=NorthWest&xposition=191&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Bar en la última planta</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/9237953/hilton-miraflores-peru-rooftop-event-space.jpg?impolicy=crop&cw=4500&ch=3333&gravity=NorthWest&xposition=249&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">
+                Última planta del Hotel Hilton con vista al exterior, mesas y sillas
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/9237474/hilton-miraflores-peru-pool-sunset.jpg?impolicy=crop&cw=4500&ch=3333&gravity=NorthWest&xposition=249&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Piscina exterior del Hotel Hilton</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4777503/fitness-center.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Gimnasio</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4786178/huascar-n-banquet.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">
+                Salón de fiestas Huascarán con montaje para banquetes
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4770335/alpamayo-theater.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">
+                Sala de reuniones Alpamayo con montaje tipo auditorio
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="#" class="d-block ratio ratio-16x9">
+                <img
+                  class="d-block object-fit-cover"
+                  src="https://www.hilton.com/im/en/LIMMFHH/4783919/standard-queen-guestroom.jpg?impolicy=crop&cw=2025&ch=1500&gravity=NorthWest&xposition=116&yposition=0&rw=424&rh=314"
+                  alt=""
+                />
+              </a>
+              <p class="text-center my-4 badge text-wrap lh-sm">Habitación estándar con cama Queen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sections informacion">
+      <div class="text-center">
+<<<<<<< HEAD
+        <h2 class="fw-bold">
+=======
+        <h2 class="display-5 fw-bold">
+>>>>>>> 62077d40f502353fe98b663a9c871a1809fe74f3
+          Información sobre los servicios<br />
+          que brindamos en hotel Hilton
+        </h2>
+        <p class="text-black-50">
+          Encuentre todos los detalles que necesita para una estadía excelente en Hilton Lima Miraflores.
+        </p>
+      </div>
+      <div class="mx-auto servicios">
+        <div class="grid">
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Recepción 24 horas</h4>
+            <p class="text-black-50">
+              La recepción del hotel está abierta las 24 horas del día, los 7 días de la semana para brindar asistencia
+              a los huéspedes con cualquier pregunta o necesidad que puedan tener.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Servicio de conserjería</h4>
+            <p class="text-black-50">
+              El servicio de conserjería puede ayudar a los huéspedes con una variedad de tareas, como organizar
+              reservas para restaurantes, espectáculos y atracciones; hacer arreglos para el transporte; y proporcionar
+              información sobre la zona local. Imagen de Servicio de conserjería del hotel
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Limpieza de habitaciones</h4>
+            <p class="text-black-50">
+              El servicio de limpieza diario es un componente fundamental de la experiencia de alojamiento en un hotel.
+              Consiste en la limpieza y el mantenimiento regular de las habitaciones de los huéspedes por parte del
+              personal de limpieza del hotel. Este servicio garantiza que las habitaciones se mantengan limpias,
+              ordenadas y cómodas durante toda la estadía del huésped.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Mantenimiento</h4>
+            <p class="text-black-50">
+              El personal de mantenimiento está disponible para solucionar cualquier problema que pueda surgir con las
+              habitaciones o las instalaciones del hotel.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Acceso a internet</h4>
+            <p class="text-black-50">
+              El hotel ofrece acceso a internet por cable o wifi en las habitaciones y en las zonas comunes.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Aparcamiento</h4>
+            <p class="text-black-50">El hotel ofrece aparcamiento gratuito o de pago para los huéspedes.</p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Restaurante y bar</h4>
+            <p class="text-black-50">
+              El hotel cuenta con un restaurante y un bar donde los huéspedes pueden disfrutar de comidas y bebidas.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Piscina</h4>
+            <p class="text-black-50">El hotel tiene una piscina donde los huéspedes pueden nadar y relajarse.</p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Gimnasio</h4>
+            <p class="text-black-50">El hotel tiene un gimnasio donde los huéspedes pueden hacer ejercicio.</p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Centro de negocios</h4>
+            <p class="text-black-50">
+              El hotel tiene un centro de negocios donde los huéspedes pueden utilizar ordenadores, impresoras y otros
+              equipos de oficina.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Servicio de habitaciones</h4>
+            <p class="text-black-50">
+              El hotel ofrece servicio de habitaciones para los huéspedes que deseen comer en sus habitaciones.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <h4 class="fw-bold fs-5">Salas de reuniones</h4>
+            <p class="text-black-50">
+              El hotel dispone de salas de reuniones para que las empresas y organizaciones celebren eventos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="beneficios" style="background-color: #673ab7">
+      <div class="container text-center text-white mx-auto" style="width: 1428px">
+<<<<<<< HEAD
+        <h4 class="text-white text-center fw-bold mb-2">
+=======
+        <h4 class="text-white text-center display-5 fw-bold mb-2">
+>>>>>>> 62077d40f502353fe98b663a9c871a1809fe74f3
+          Beneficios para <br />
+          Miembros de Hilton Honors
+        </h4>
+        <div class="row checks mt-4">
+          <div>
+            <p><span>✔</span>WiFi gratis</p>
+          </div>
+          <div>
+            <p><span>✔</span>Carga para vehículos eléctricos</p>
+          </div>
+          <div>
+            <p><span>✔</span>Piscina al aire libre</p>
+          </div>
+          <div>
+            <p><span>✔</span>Servicio a la habitación</p>
+          </div>
+          <div>
+            <p><span>✔</span>Habitación para no fumadores</p>
+          </div>
+          <div>
+            <p><span>✔</span>Gimnasio</p>
+          </div>
+          <div>
+            <p><span>✔</span>Lounge ejecutivo</p>
+          </div>
+          <div>
+            <p><span>✔</span>Centro de negocios</p>
+          </div>
+          <div>
+            <p><span>✔</span>Servicio de conserjería</p>
+          </div>
+          <div>
+            <p><span>✔</span>Salas de reuniones</p>
+          </div>
+        </div>
+        <div class="boton">
+          <button class="my-4">Descrube Mas</button>
+        </div>
+      </div>
+      <div>
+        <img src="Sin título-1.png" alt="" class="img-fluid start-0 end-100" />
+      </div>
+    </section>
+    <section class="sponsors">
+      <div class="container-fluid">
+        <div class="col-md-12 mx-auto text-center">
+          <h2 class="fw-bold">Nuestros Sponsors</h2>
+          <h4 class="text-black-50 text-wrap" style="font-size: 18px">Algunas de las marcas que confían en nosotros</h4>
+          <div class="row mx-auto sponsors-logos" style="max-width: 1500px">
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/carnival-circus-design-template-59c33fa7bc13eadb9aeb56be9ab9e97c.jpg?ts=1658437227"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/business-marketing-agency-flyer-design-template-c000b85110451cbd048dbba238f49e3b.jpg?ts=1698327623"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/digital-marketing-flyer-design-template-ab6bde6e332728b8fcf2cdf37130c551.jpg?ts=1598690724"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/barber-video-ad-template-design-69bd294a59b29bdeb3ec55059bb2724e.jpg?ts=1698822410"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/digital-marketing-flyer-design-template-ab6bde6e332728b8fcf2cdf37130c551.jpg?ts=1598690724"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fashion-cloth-sale-flyer-design-template-5753368648e166023a0d4646fb6de53c.jpg?ts=1706779396"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-032f50ef32047135f11185dabd9e759a.jpg?ts=1632418258"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/buisness-card-design-template-ea5062db0e2c1be9de133633813d85e8.jpg?ts=1663008475"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/copy-of-tax-service-flyer-design-template-6307721553db19767a6bff2be59b7da9.jpg?ts=1698442934"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/real-estate%2Ccorporate-design-template-101f08f01783b6a897a23d5ed715edd2.jpg?ts=1698414948"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/copy-of-spring-party-banner-design-template-d42c0a70166dec1b7c68aafbe64f025e.jpg?ts=1698379746"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+            <div class="col-2 d-flex align-items-end">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-selling-product-social-media-banner-design-template-e7698d7bd09853d43bb5c2668b8fe294.jpg?ts=1661679322"
+                alt=""
+                class="img-fluid d-block mx-auto w-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clientes">
+      <div class="container-fluid">
+        <div class="col-md-12 mx-auto text-center">
+          <h2 class="fw-bold">Nuestros clientes satisfechos</h2>
+          <h4 class="text-white-50 text-wrap" style="font-size: 18px">
+            Apreciamos a todos nuestros clientes y nos esforzamos por brindarles la mejor experiencia posible.
+          </h4>
+        </div>
+        <div class="carrousel">
+          <div class="center">
+            <div class="wrapper">
+              <div class="inner">
+                <div class="card">
+                  <img src="https://a0.muscache.com/im/pictures/ee275c74-b4f9-422e-890c-6b330984b788.jpg" />
+                  <span>Aardvark Book Club</span>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/hosting/Hosting-953603479569926015/original/c6c3a092-50d5-4c96-9bc1-3e60743619ab.jpeg?im_w=720"
+                  />
+                  <span>Numero Vibe</span>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/miso/Hosting-1016730924710223855/original/02b835d5-68bc-4af8-baa9-b4af22709a30.jpeg?im_w=720"
+                  />
+                  <span>Love Spell</span>
+                </div>
+                <div class="card">
+                  <img src="https://a0.muscache.com/im/pictures/a1b0edd2-959f-44ec-9998-0c5c1fc75e22.jpg?im_w=720" />
+                  <span>Aardvark Book Club</span>
+                </div>
+                <div class="card">
+                  <img src="https://a0.muscache.com/im/pictures/1847b1e6-69d6-4291-9b6d-b525bb10575b.jpg?im_w=720" />
+                  <span>Numero Vibe</span>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/miso/Hosting-763085375769307676/original/e44b1245-01ee-449e-8231-0a9ecb9e5896.jpeg?im_w=720"
+                  />
+                  <span>Love Spell</span>
+                </div>
+                <div class="card">
+                  <img src="https://a0.muscache.com/im/pictures/8bd2fa37-66d8-4208-a715-10242fa859bb.jpg?im_w=720" />
+                  <span>Aardvark Book Club</span>
+                </div>
+                <div class="card">
+                  <img src="https://a0.muscache.com/im/pictures/3226fe71-551e-432d-8a67-c44d697ca032.jpg?im_w=720" />
+                  <span>Numero Vibe</span>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/miso/Hosting-763085375769307676/original/e44b1245-01ee-449e-8231-0a9ecb9e5896.jpeg?im_w=720"
+                  />
+                  <span>Love Spell</span>
+                </div>
+              </div>
+            </div>
+            <div class="map">
+              <button class="active first"></button>
+              <button class="second"></button>
+              <button class="third"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="preguntas-frecuentes">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center px-4">
+            <h2 class="fw-bold">Preguntas frecuentes</h2>
+            <p class="text-black-50">¿No encuentras tu pregunta? ¡Chatea con nosotros!</p>
+            <hr class="text-black-50" />
+            <div class="justify-content-between d-flex">
+              <p class="fw-bold pregunta d-inline-block">¿Cuál es el horario de check-in y check-out?</p>
+              <span class="my-auto fs-3 fw-light">+</span>
+            </div>
+            <hr class="text-black-50" />
+            <div class="justify-content-between d-flex">
+              <p class="fw-bold pregunta d-inline-block">¿Ofrecen servicio de transporte al aeropuerto?</p>
+              <span class="my-auto fs-3 fw-light">+</span>
+            </div>
+            <hr class="text-black-50" />
+            <div class="justify-content-between d-flex">
+              <p class="fw-bold pregunta d-inline-block">¿Cuáles son las opciones de estacionamiento?</p>
+              <span class="my-auto fs-3 fw-light">+</span>
+            </div>
+            <hr class="text-black-50" />
+            <div class="justify-content-between d-flex">
+              <p class="fw-bold pregunta d-inline-block">¿Se admiten mascotas?</p>
+              <span class="my-auto fs-3 fw-light">+</span>
+            </div>
+            <hr class="text-black-50" />
+            <div class="justify-content-between d-flex">
+              <p class="fw-bold pregunta d-inline-block">¿Tienen servicio de habitaciones las 24 horas?</p>
+              <span class="my-auto fs-3 fw-light">+</span>
+            </div>
+            <hr class="text-black-50" />
+            <div class="justify-content-between d-flex">
+              <p class="fw-bold pregunta d-inline-block">¿Cuáles son las políticas de cancelación?</p>
+              <span class="my-auto fs-3 fw-light">+</span>
+            </div>
+            <hr class="text-black-50" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="compra-ahora">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="fw-bold text-white">
+              Descubre uno de los hoteles más populares con más de 10,000 reservas vendidas.
+            </h2>
+            <p class="text-white">¡Haz tu reserva ahora y vive una experiencia memorable durante tu estadía!</p>
+            <button class="btn btn-success py-3 px-5 rounded-1">Reservar ahora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-container">
+      <footer class="container py-5">
+        <div class="row mx-auto">
+          <div class="col-3">
+            <h5 class="">Latest Demos</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5>Top Features</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-decoration-none text-white-50">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5>Top Features</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+            </ul>
+            <h6>Help Center</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+            </ul>
+            <h6>Community</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5>Community</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Help Center</a></li>
+            </ul>
+            <h6>Wall of Fame</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Community</a></li>
+            </ul>
+            <h6>Follow</h6>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-twitter"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                    /></svg
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    /></svg
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    /></svg
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 1.5A1.5 1.5 0 0 1 3.5 0h9A1.5 1.5 0 0 1 14 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-13zM4 4v10H6V4H4zm1 2h1v7H5V6zm7-2v2.5c0 .672-.328 1.672-1.672 1.672h-.328C8 10.172 8 9.5 8 9V4h-2v7h1V7.5c0-.672.328-1.5 1.672-1.5h.328C10 6 10 6.672 10 7V11h2V4h-1z"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="text-center py-4 bg-dark">
+        <p class="m-0 text-white-50" style="font-size: 12px">© 2021 Company, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
